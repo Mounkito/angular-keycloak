@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25vw;
+  padding: 10vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 25vw;
+    padding: 10vh;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

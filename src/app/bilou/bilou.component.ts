@@ -7,13 +7,9 @@ import * as Keycloak from 'keycloak-js';
   templateUrl: './bilou.component.html',
   styleUrls: ['./bilou.component.css'],
 })
-export class BilouComponent implements OnInit, OnDestroy {
+export class BilouComponent implements OnInit {
   userName: string = '';
   constructor(private keycloakService: KeycloakService) {}
-
-  ngOnDestroy(): void {
-    this.keycloakService.logout();
-  }
 
   ngOnInit(): void {
     this.userName = this.keycloakService.getUsername();

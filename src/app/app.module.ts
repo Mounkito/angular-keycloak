@@ -39,6 +39,7 @@ function initializeKeycloak(keycloak: KeycloakService) : () => Promise<boolean> 
     initOptions : {
       checkLoginIframe: true,
       checkLoginIframeInterval: 25
-    }
+    },
+    loadUserProfileAtStartUp : true
     });
 }

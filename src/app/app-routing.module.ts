@@ -6,7 +6,7 @@ import { AuthGuard } from './keycloak/app.guard';
 
 const routes: Routes = [
   { path: '*', redirectTo: '', pathMatch: 'full' },
-  { path: 'bilou', component: BilouComponent, canActivate: [AuthGuard]},
+  { path: 'bilou', component: BilouComponent, canActivate: [AuthGuard],  data: { roles: ['bilou-team'] } },
 ];
 
 @NgModule({

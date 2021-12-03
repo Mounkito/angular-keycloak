@@ -1,6 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { KeycloakService } from 'keycloak-angular';
-import * as Keycloak from 'keycloak-js';
 
 @Component({
   selector: 'app-bilou',

@@ -5,11 +5,13 @@ import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BilouComponent } from './bilou/bilou.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BilouComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
